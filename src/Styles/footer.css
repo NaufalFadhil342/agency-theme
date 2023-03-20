@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 3rem 8%;
+  background-color: #00102e;
+  display: flex;
+}
+
+.footer .brand {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.footer .brand img {
+  width: auto;
+  height: 50px;
+  margin-top: 2px;
+}
+
+.footer .brand h1 {
+  font-size: 2.5em;
+}
+
+.footer .biodata {
+  flex: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.footer .biodata .about,
+.footer .biodata .location,
+.footer .biodata .policy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.footer .biodata .about .nav,
+.footer .biodata .location .nav,
+.footer .biodata .policy .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .biodata .about .nav a,
+.footer .biodata .location .nav a,
+.footer .biodata .policy .nav a {
+  text-decoration: none;
+  color: #7a8a99;
+  font-size: 600;
+}
+
+.copyright {
+  border-top: 1px solid white;
+  width: 100%;
+  height: auto;
+  padding: 1rem 8%;
+  background-color: #00102e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright .poweredBy {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright .socmed {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.copyright .socmed svg {
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    gap: 2rem;
+  }
+
+  .footer .brand {
+    flex: 0;
+    display: none;
+  }
+
+  .footer .biodata {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .biodata {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .biodata .about,
+  .footer .biodata .location,
+  .footer .biodata .policy {
+    text-align: center;
+  }
+
+  .footer .biodata .about .nav,
+  .footer .biodata .location .nav,
+  .footer .biodata .policy .nav {
+    text-align: center;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+}

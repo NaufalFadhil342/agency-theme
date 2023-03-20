@@ -1,0 +1,255 @@
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .headline {
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .headline h1 {
+  color: #00102e;
+  font-size: 3em;
+}
+
+.contact .headline p {
+  color: #555;
+  width: 32rem;
+  text-align: justify;
+}
+
+.contact .info {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  display: flex;
+  gap: 8rem;
+  padding: 0 8%;
+}
+
+.contact .info .identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .info .identity .email,
+.contact .info .identity .location,
+.contact .info .identity .social {
+  font-weight: 600;
+  font-size: 13px;
+  color: #737c9b;
+  text-transform: uppercase;
+}
+
+.contact .info .identity p,
+.contact .info .identity p {
+  color: #00102e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .info .identity .icon {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5px;
+}
+
+.contact .info .identity .icon svg {
+  color: #00102e;
+}
+
+.contact .form {
+  width: 100%;
+  height: auto;
+  padding: 0 8%;
+}
+
+.contact .form .sendUs {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact .form .sendUs h3 {
+  color: #00102e;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.contact .form .sendUs form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact .form .sendUs form .identity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact .form .sendUs form .identity .name,
+.contact .form .sendUs form .identity .email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .form .sendUs form .identity .name label,
+.contact .form .sendUs form .identity .email label {
+  color: #00102e;
+  font-weight: 600;
+}
+
+.contact .form .sendUs form .identity .name input,
+.contact .form .sendUs form .identity .email input {
+  width: 20rem;
+  height: 3rem;
+  font-size: inherit;
+  padding-left: 0.5rem;
+  color: #555;
+  border: 1px solid #555;
+  border-radius: 3px;
+  outline: none;
+}
+
+.contact .form .sendUs form .text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form .sendUs form .text .message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .form .sendUs form .text .message label {
+  color: #00102e;
+  font-weight: 600;
+}
+
+.contact .form .sendUs form .text .message textarea {
+  width: 42rem;
+  height: 8rem;
+  color: #555;
+  border: 1px solid #555;
+  border-radius: 3px;
+  outline: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: inherit;
+}
+
+.contact .form .sendUs form .action {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form .sendUs form .action .submit {
+  width: 50%;
+  border-radius: 3px;
+  background-color: #ffd00a;
+  font-weight: 600;
+}
+
+.contact .form .sendUs form .action .submit:hover {
+  background-color: #fcd941;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contact .headline p {
+    width: 65%;
+  }
+
+  .contact .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .contact .form .sendUs {
+    padding: 0 8%;
+  }
+
+  .contact .form .sendUs form .identity .name,
+  .contact .form .sendUs form .identity .email {
+    width: 100%;
+  }
+
+  .contact .form .sendUs form .identity .name input,
+  .contact .form .sendUs form .identity .email input {
+    width: 100%;
+  }
+
+  .contact .form .sendUs form .text .message,
+  .contact .form .sendUs form .action .submit {
+    width: 100%;
+  }
+
+  .contact .form .sendUs form .text .message textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .contact .headline p {
+    width: 100%;
+  }
+
+  .contact .form .sendUs {
+    padding: 0 8%;
+  }
+  .contact .form .sendUs form .identity {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact .headline h1 {
+    margin: auto;
+  }
+
+  .contact .form .sendUs {
+    padding: 0 0;
+  }
+
+  .contact .form .sendUs form .identity {
+    gap: 1rem;
+  }
+}

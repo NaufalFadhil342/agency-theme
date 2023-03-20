@@ -1,0 +1,114 @@
+.navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #00102e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 2px solid white;
+}
+
+.navbar .title {
+  color: white;
+}
+
+.navbar .linkBar {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar .linkBar nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar .linkBar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.navbar .linkBar nav a:hover {
+  color: #ffd00a;
+  transition: all 0.5s ease;
+}
+
+.navbar .hiddenLinks {
+  display: none;
+}
+
+.navbar .tapMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* .navbar {
+    padding: 0;
+  } */
+
+  .navbar .linkBar {
+    display: none;
+  }
+
+  .navbar .tapMenu {
+    display: block;
+    font-size: 35px;
+    transform: translateY(4px);
+    color: white;
+  }
+
+  .navbar .hiddenLinks {
+    width: 20rem;
+    height: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #00102e;
+  }
+
+  .navbar .hiddenLinks .closeIcon {
+    display: flex;
+    transform: translate(5.5rem, 1.5rem);
+    color: white;
+  }
+
+  .navbar .hiddenLinks .closeIcon svg {
+    font-size: 25px;
+  }
+
+  .navbar .hiddenLinks nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.7rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  .navbar .hiddenLinks nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .navbar .hiddenLinks nav a:hover {
+    color: #ffd00a;
+    transition: all 0.5s ease;
+  }
+}
